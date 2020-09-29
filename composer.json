@@ -1,0 +1,16 @@
+{
+  "name": "trayto-com/php-coding-standards",
+  "description": "Common coding-standard utils, tools and rules used across our PHP projects in trayto.com",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "homepage": "https://trayto.com",
+  "authors": [
+    {
+      "name": "Jakub Dolba",
+      "email": "jakub.dolba@trayto.com"
+    }
+  ],
+  "require": {
+    "symplify/easy-coding-standard-prefixed": "^8.3"
+  }
+}
