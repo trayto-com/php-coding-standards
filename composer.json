@@ -11,6 +11,16 @@
     }
   ],
   "require": {
-    "symplify/easy-coding-standard-prefixed": "^8.3"
+    "symplify/easy-coding-standard-prefixed": "^8.3",
+    "php-parallel-lint/php-parallel-lint": "^1.2"
+  },
+  "scripts": {
+    "standards": [
+      "@ecs",
+      "@lint"
+    ],
+    "ecs": "ecs check definitions --config definitions/ecs-default.php",
+    "ecs-fix": "ecs check definitions --config definitions/ecs-default.php --fix",
+    "lint": "parallel-lint --exclude vendor ."
   }
 }
