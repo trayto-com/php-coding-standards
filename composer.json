@@ -16,11 +16,14 @@
   },
   "scripts": {
     "standards": [
+      "@lint",
       "@ecs",
-      "@lint"
+      "@ecs-md"
     ],
     "ecs": "ecs check definitions --config definitions/ecs-default.php",
     "ecs-fix": "ecs check definitions --config definitions/ecs-default.php --fix",
+    "ecs-md": "ecs check-markdown README.md definitions/ecs-default.php",
+    "ecs-md-fix": "ecs check-markdown README.md definitions/ecs-default.php --fix",
     "lint": "parallel-lint --exclude vendor ."
   }
 }
